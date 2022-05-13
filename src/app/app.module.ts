@@ -14,6 +14,9 @@ import { PopularComponent } from './components/popular/popular.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { InfoCardSmallComponent } from './shared/components/info-card-small/info-card-small.component';
 import { RestaurantInfoComponent } from './shared/components/restaurant-info/restaurant-info.component';
+import { HomeComponent } from './components/home/home.component';
+import { PageMissingComponent } from './shared/components/page-missing/page-missing.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { RestaurantInfoComponent } from './shared/components/restaurant-info/res
     PopularComponent,
     NavbarComponent,
     InfoCardSmallComponent,
-    RestaurantInfoComponent
+    RestaurantInfoComponent,
+    HomeComponent,
+    PageMissingComponent,
+    MapComponent
 
   ],
   imports: [

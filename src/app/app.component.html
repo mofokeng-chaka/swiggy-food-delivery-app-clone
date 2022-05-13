@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swiggy Clone</title>
-  </head>
-  <body>
-    <div class="container">
-      <app-location></app-location>
+<div>
+  <div (window:resize)="onResize($event)">
 
-      <app-banner></app-banner>
-
-      <app-top-picks></app-top-picks>
-
-      <app-offers></app-offers>
-
-      <app-coupons></app-coupons>
-
-      <app-spotlight></app-spotlight>
-
-      <app-popular></app-popular>
-
-    </div>
     <app-navbar></app-navbar>
-  </body>
-</html>
+
+    <div class="body">
+      <div class="container">
+        <app-location></app-location>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© K2K 2022</p>
+    </div>
+  </div>
+</div>
