@@ -17,6 +17,8 @@ import { RestaurantInfoComponent } from './shared/components/restaurant-info/res
 import { HomeComponent } from './components/home/home.component';
 import { PageMissingComponent } from './shared/components/page-missing/page-missing.component';
 import { MapComponent } from './components/map/map.component';
+import {GooglePlaceModule} from 'ngx-google-places-autocomplete';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { MapComponent } from './components/map/map.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    GooglePlaceModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Renderer2 } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-info-card-small',
@@ -13,12 +13,10 @@ export class InfoCardSmallComponent implements OnInit {
   @Input() time?: string;
   @Input() rounded?: boolean;
 
-  constructor(private renderer :Renderer2) { }
+  constructor() { }
 
   ngOnInit(): void {
-    console.log(this.name,this.time,typeof this.badge, '-');
   }
 
-  isDefined(val): boolean { return typeof val !== 'undefined'; };
-
+  isDefined(val): boolean { return typeof val !== 'undefined'; }
 }

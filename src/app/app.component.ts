@@ -25,4 +25,8 @@ export class AppComponent implements OnInit {
     // Get Window Size
     this.isMobile = this.width < this.mobileWidth;
   }
+
+  getAddress(place: {[key: string]: any}): void {
+    console.log(place.formatted_address);
+  }
 }
